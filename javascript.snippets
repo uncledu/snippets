@@ -1,11 +1,13 @@
 # Import only React
 snippet ri1
 	import React from 'react'
+endsnippet
 
 # Import both React and Component
 snippet ri2
 	import React, { PureComponent } from 'react'
 	import PropTypes from 'prop-types'
+endsnippet
 
 # React class
 snippet rcla
@@ -16,6 +18,7 @@ snippet rcla
 			)
 		}
 	}
+endsnippet
 
 # React constructor
 snippet rcon
@@ -26,18 +29,21 @@ snippet rcon
 			${1}: ${0},
 		}
 	}
+endsnippet
 
 # Proptypes for React Class
 snippet rcpt
 	static propTypes = {
 		${1}: PropTypes.${0},
 	}
+endsnippet
 
 # Default props for React Class
 snippet rcdp
 	static defaultProps = {
 		${1}: ${0},
 	}
+endsnippet
 
 # Presentational component
 snippet rcom
@@ -46,37 +52,45 @@ snippet rcom
 			${0:<div></div>}
 		)
 	}
+endsnippet
 
 # Proptypes for Presentational component
 snippet rpt
 	${1}.propTypes = {
 		${2}: PropTypes.${0},
 	}
+endsnippet
 
 # Default props for Presentational component
 snippet rdp
 	${1}.defaultProps = {
 		${2}: ${0},
 	}
+endsnippet
 
 # Lifecycle Methods
 snippet rcdm
 	componentDidMount() {
 		${0:${VISUAL}}
 	}
+endsnippet
 
 # State
 snippet rsst
 	this.setState({
 		${1}: ${0},
 	})
+endsnippet
 
 snippet rtst
 	this.state.${0}
+endsnippet
 
 # Props
 snippet rp
 	props.${0}
+endsnippet
 
 snippet rtp
 	this.props.${0}
+endsnippet
